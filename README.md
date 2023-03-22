@@ -1,2 +1,0 @@
-# michaeldouglas
-UX Design Portfolio
