@@ -286,7 +286,7 @@ header .header-content .header-content-inner p {
   text-align: center;
   color: #fff;
   opacity: 0;
-  background: rgba(71, 43, 86, 0.9);
+  background: rgba(66, 66, 66, 0.800);
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
@@ -426,9 +426,9 @@ fieldset[disabled] .btn-default.active {
 }
 
 .btn-primary {
-  border-color: #472b56;
+  border-color: #333;
   color: #fff;
-  background-color: #472b56;
+  background-color: #333;
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
@@ -440,9 +440,9 @@ fieldset[disabled] .btn-default.active {
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
-  border-color: #6a4d73;
+  border-color: #1d9cf7;
   color: #fff;
-  background-color: #6a4d73;
+  background-color: #1d9cf7;
 }
 
 .btn-primary:active,
@@ -480,7 +480,7 @@ fieldset[disabled] .btn-primary.active {
 
 .btn {
   border: 0;
-  border-radius: 300px;
+  border-radius: 5px;
   text-transform: uppercase;
   font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
   font-weight: 700;
@@ -989,4 +989,8 @@ pre {
 
 .email-style{
   color: #333;
+}
+
+.email-style:hover{
+ color: #1d9cf7;
 }
