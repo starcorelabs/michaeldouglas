@@ -558,12 +558,12 @@ img::-moz-selection {
 }
 
 .postlist-link{
-  color: #1d9cf7;
+  color: #333;
   text-decoration: none;
 }
 
 .postlist-link:hover{
-  color: #fff;
+  color: #1d9cf7;
   text-decoration: none;
 }
 
