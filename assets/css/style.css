@@ -670,6 +670,7 @@ pre {
 .portfolio-title{
   margin-top: 70px;
   margin-left: 15px;
+  text-align: center;
 }
 
 .portfolio-content{
@@ -844,4 +845,8 @@ pre {
 
 .email-style:hover{
  color: #1d9cf7;
+}
+
+.project-center{
+  margin:auto;
 }
