@@ -660,6 +660,19 @@ pre {
   }
 }
 
+.container-list > div a{
+  text-decoration: underline;
+  color: #000000;
+}
+
+.container-list > div a:hover{
+  text-decoration: underline;
+  color:#1d9cf7;
+}
+
+.container-list > div p:hover{
+  color:#1d9cf7;
+}
 
 .skill-icon{
   height: 60px;
@@ -683,6 +696,7 @@ pre {
 .blog-title{
   margin-top: 70px;
   margin-left: 15px;
+  text-align: center;
 }
 
 .project-single{
