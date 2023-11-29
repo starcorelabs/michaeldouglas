@@ -759,6 +759,10 @@ pre {
   font-weight:700;
 }
 
+.bold {
+  font-weight:700;
+}
+
 /* tabs */
 .tab-container {
   height: auto;
