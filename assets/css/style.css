@@ -542,10 +542,6 @@ img::-moz-selection {
   padding: 50px 0 0 0;
 }
 
-.top-space{
-  margin-top: 70px;
-}
-
 .bottom-space{
   margin-bottom: 50px;
 }
@@ -813,7 +809,7 @@ pre {
 /* mytabs = tab-container */
 
 .top-space{
-  margin: 100px 0 0 0;
+  margin: 40px 0 0 0;
 }
 
 .bottom-space{
@@ -867,4 +863,27 @@ pre {
 
 .project-center{
   margin:auto;
+}
+
+.hero-img{
+  background-image: url("../../assets/img/green-moss-forest.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 350px;
+  width: 100%;
+}
+
+.hero-img h1{
+  text-align: center;
+  padding: 132px 0 0 0;
+  font-size: 72px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+
+@media (max-width: 400px){
+  .hero-img h1{
+    font-size: 60px;
+  }
 }
