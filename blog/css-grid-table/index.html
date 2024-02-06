@@ -73,39 +73,132 @@
         
         
         
-<article class="project-single" id="project">
-    <div>
-        <h1>Responsive Website Redesign</h1>
-        <p>HCCMIS</p>
-        <p>2015-04-01</p>
-        <p><p><img src="../../assets/img/work/hccmis.png" alt="img">
-<small>One of the responsive pages I built</small></p>
-<h3>Situation</h3>
-<p><a href="http://www.hccmis.com/">HCCMIS</a> needed to make their website responsive to serve customers using mobile devices.</p>
-<p>The company offers medical travel insurance to customers through their website. <br />
-They were established in 1998 in Indianapolis, IN.</p>
-<p>Note: In June 2015, HCCMIS was acquired by Tokio Marine Holdings Inc.</p>
-<h3>Challenge</h3>
-<p><img src="../../assets/img/work/hccmis-window.png" alt="img"></p>
-<p>Their main website was hosted on the PHP-based <a href="https://www.hannonhill.com/products/cascade-cms/index.html">Cacade CMS</a> server.</p>
-<p>The company used this project as a opportunity to redesign their website. All the responsive web pages needed to be converted to PHP before they would work properly on the server.</p>
-<h3>Action</h3>
-<p><img src="../../assets/img/work/hccmis-desk.png" alt="img"></p>
-<p>Amy, the Graphic Designer, used Photoshop to create mockups of what each web page should look like.</p>
-<p>I was hired as the UI Developer to translate the Photoshop mockup into responsive page templates.</p>
-<p>I asked Amy to define the height and width of the Photoshop components in pixels. Then I used the Notepad++ text editor to write the required HTML and CSS Bootstrap code. Sometimes I used Photoshop for image resizing.</p>
-<p>I wrote a style guide for the project to ensure UI consistency. Making sure the templates met company design and coding standards.</p>
-<p>I tested my work in multiple browsers before committing code to the internal repository.</p>
-<h3>Result</h3>
-<p><img src="../../assets/img/work/tokio-marine-hcc.png" alt="img">
-<small>After I left someone messed up the centering of the circle icons</small></p>
-<p>We successfully completed the project on time. The department manager Nick said he was happy with our work.</p>
-<p>This was only a short-term contract role. During this time HCCMIS was acquired by another company, <a href="https://www.tokiomarinehd.com/en/">Tokio Marine Holdings Inc</a>.</p>
-<p>None of the staff was made aware of this until August of 2015. I was informed that due to the merger, HCCMIS was placed under a hiring freeze.</p>
-<p>This meant they couldn't extend my contract again or hire me as a full-time employee.
-So, before my contract ended I looked for other opportunities.</p>
+<!-- post -->
+
+<article class="fullpost" id="post">
+<div>
+  <h1>CSS Grid Table</h1>
+  <p>2020-01-18</p>
+  <p><p><img src="../../assets/img/post-images/code.jpg" alt="img"></p>
+<p>It is difficult to display HTML Tables on small screens.</p>
+<p>A quick Internet search will turn up many proposed solutions. But there is no silver bullet. There are too many factors when working with HTML Tables.</p>
+<p>First of which is to decided if you'll be using HTML <code>&lt;table&gt;</code> or <code>&lt;div&gt;</code> elements.</p>
+<p>When choosing a solution for your project you must consider the browsers your clients will use. Even though Internet Explorer 11 is no longer supported by Microsoft. Many companies are still using it.</p>
+<p>In today's example I'll be using CSS Grid to create a table. I will be using a media query to switch the table to <code>display:block</code> for mobile.</p>
+<p>This solution will work across all major browsers and even IE11.</p>
+<h4>CSS Grid Table</h4>
+<p><img src="../../assets/img/post-images/css-grid-table.png" alt="Grid Table">
+ </p>
+<h4>CSS</h4>
+<pre><code class="language-css">	/* Reset */
+
+	body {
+		padding: 0;
+		margin: 0;
+		border: 0;
+		box-sizing: border-box;
+	}
+
+	/* Table */
+
+	.table {
+	  margin: 50px 20px 0 20px;
+	  display: grid;
+	  grid-template-columns: repeat(5, 1fr);
+	  background-color: #fff;
+	  color: #444;
+	  max-width: 920px;
+	  border: 1px solid #bfbfbf;
+	}
+
+	.header {
+		background-color: #bfbfbf;
+		font-size: 14;
+		font-weight: bold;
+	}
+
+	.row {
+	  grid-column: 1 / -1;
+	  display: grid;
+	  grid-template-columns: repeat(5,  1fr);
+	  border-bottom: 1px solid #bfbfbf;
+	}
+
+	.row:last-child{
+		border: 0;
+	}
+
+	.cell {
+	  color: #444444;
+	  padding: 10px 0;
+	  font-size: 12;
+	  margin: 0 10px;
+	}
+
+	@media screen and (max-width: 430px){
+		.table .row {
+		  display: block;
+		}
+
+		.header{
+			display: none !important;
+		}
+	}
+</code></pre>
+<p> </p>
+<h4>HTML</h4>
+<pre><code class="language-html">&lt;body&gt;
+	&lt;div class=&quot;table&quot;&gt;
+	
+		&lt;div class=&quot;row header&quot;&gt;
+			&lt;div class=&quot;cell title&quot;&gt;Client Details&lt;/div&gt;
+			&lt;div class=&quot;cell&quot;&gt;Animals&lt;/div&gt;
+			&lt;div class=&quot;cell&quot;&gt;Date Registered&lt;/div&gt;
+			&lt;div class=&quot;cell&quot;&gt;Account Status&lt;/div&gt;
+			&lt;div class=&quot;cell&quot;&gt;&amp;nbsp;&lt;/div&gt;
+		&lt;/div&gt;
+
+		&lt;div class=&quot;row&quot;&gt;
+			&lt;div class=&quot;cell&quot;&gt;Rick Sanchez&lt;/div&gt;
+			&lt;div class=&quot;cell&quot;&gt;Snuffles (Dog)&lt;/div&gt;
+			&lt;div class=&quot;cell&quot;&gt;12/16/19&lt;/div&gt;
+			&lt;div class=&quot;cell&quot;&gt;Approved&lt;/div&gt;
+			&lt;div class=&quot;cell&quot;&gt;&lt;button&gt;Button&lt;/button&gt;&lt;/div&gt;
+		&lt;/div&gt;
+
+		&lt;div class=&quot;row&quot;&gt;
+			&lt;div class=&quot;cell&quot;&gt;Bugs Bunny&lt;/div&gt;
+			&lt;div class=&quot;cell&quot;&gt;Daffy (Duck)&lt;/div&gt;
+			&lt;div class=&quot;cell&quot;&gt;12/17/19&lt;/div&gt;
+			&lt;div class=&quot;cell&quot;&gt;Pending&lt;/div&gt;
+			&lt;div class=&quot;cell&quot;&gt;&lt;button&gt;Button&lt;/button&gt;&lt;/div&gt;
+		&lt;/div&gt;
+
+		&lt;div class=&quot;row&quot;&gt;
+			&lt;div class=&quot;cell&quot;&gt;James Brown&lt;/div&gt;
+			&lt;div class=&quot;cell&quot;&gt;Shadow (Dog)&lt;/div&gt;
+			&lt;div class=&quot;cell&quot;&gt;12/18/19&lt;/div&gt;
+			&lt;div class=&quot;cell&quot;&gt;Review&lt;/div&gt;
+			&lt;div class=&quot;cell&quot;&gt;&lt;button&gt;Button&lt;/button&gt;&lt;/div&gt;
+		&lt;/div&gt;
+
+	&lt;/div&gt;&lt;!-- end table --&gt;
+&lt;/body&gt;
+</code></pre>
+<p> </p>
+<h4>Resources</h4>
+<ul>
+<li><a href="https://css-tricks.com/getting-started-css-grid/">Getting Started with CSS Grid</a></li>
+<li><a href="https://vgpena.github.io/using-css-grid-the-right-way/">Using CSS Grid the right way</a></li>
+<li><a href="https://css-tricks.com/look-ma-no-media-queries-responsive-layouts-using-css-grid/">Look Ma, No Media Queries! Responsive Layouts Using CSS Grid</a></li>
+<li><a href="https://evanminto.com/blog/intrinsically-responsive-css-grid-minmax-min/">Intrinsically Responsive CSS Grid with minmax() and min()</a>
+ </li>
+</ul>
 </p>
-        <div></article>
+</div>
+</article>
+
+<!-- end post -->
         
         
         
