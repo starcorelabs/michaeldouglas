@@ -722,25 +722,25 @@ pre {
 }
 
 
-.hire-content{
+/* Solitary Page */
+
+.solitary-content{
   display: flex;
   justify-content: center;
   margin-top: 70px;
 }
 
-.hire-content div{
+.solitary-content div{
   max-width: 800px;
   margin: 0 10px;
 }
 
-.hire-img{
+.solitary-img{
   border-radius: 4px;
 }
 
-.podcast iframe{
-  height: 450px;
-  width: 800px; 
-  margin-bottom: 40px;
+.solitary-title{
+  color: #222;
 }
 
 /* Flat Colors */
