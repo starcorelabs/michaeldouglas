@@ -631,6 +631,13 @@ pre {
   margin: 20px;
 }
 
+@media (max-width: 522px){
+  .container-list{
+    margin: 10px 0 0 49px;
+  }
+}
+
+
 @media (min-width: 801px) and (max-width: 1024px){
   .container-list .square {
   width: 25%;
@@ -886,4 +893,35 @@ pre {
   .hero-img h1{
     font-size: 60px;
   }
+}
+
+.deliverables{
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.items{
+  width: 350px;
+  height: auto;
+  margin-right: 20px;
+}
+
+@media (min-width: 991px) and (max-width: 1199px){
+  .deliverables{
+    margin-right: 40px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 900px){
+  .deliverables{
+  text-align: center;
+  }
+}
+
+
+.text-bold{
+  font-weight: bold;
 }
