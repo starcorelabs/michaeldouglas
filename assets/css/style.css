@@ -867,25 +867,25 @@ pre {
 }
 
 .hero-img{
-  background-image: url("../../assets/img/green-moss-forest.jpg");
+  background-image: url("../../assets/img/");
   background-position: center;
   background-size: cover;
   height: 350px;
   width: 100%;
 }
 
-.hero-img h1{
+.hero h1{
   text-align: center;
-  padding: 132px 0 0 0;
-  font-size: 72px;
+  margin: 100px 0 0 0;
+  font-size: 60px;
   font-weight: bold;
-  color: #FFFFFF;
+  color: #333333;
 }
 
 
 @media (max-width: 400px){
-  .hero-img h1{
-    font-size: 60px;
+  .hero h1{
+    font-size: 50px;
   }
 }
 
