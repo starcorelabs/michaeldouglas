@@ -717,6 +717,8 @@ pre {
 }
 
 .michael-headshot{
+  height: 200px;
+  width: 200px;
   float: left;
   margin: 0 10px 10px 0;
   border-radius: 3px;
