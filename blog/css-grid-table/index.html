@@ -78,9 +78,9 @@
   <p><p><img src="../../assets/img/post-images/code.jpg" alt="img"></p>
 <p>It is difficult to display HTML Tables on small screens.</p>
 <p>A quick Internet search will turn up many proposed solutions. But there is no silver bullet. There are too many factors when working with HTML Tables.</p>
-<p>First of which is to decided if you'll be using HTML <code>&lt;table&gt;</code> or <code>&lt;div&gt;</code> elements.</p>
+<p>First of which is to decide if you'll be using HTML <code>&lt;table&gt;</code> or <code>&lt;div&gt;</code> elements.</p>
 <p>When choosing a solution for your project you must consider the browsers your clients will use. Even though Internet Explorer 11 is no longer supported by Microsoft. Many companies are still using it.</p>
-<p>In today's example I'll be using CSS Grid to create a table. I will be using a media query to switch the table to <code>display:block</code> for mobile.</p>
+<p>In today's example, I'll be using CSS Grid to create a table. I will be using a media query to switch the table to <code>display:block</code> for mobile.</p>
 <p>This solution will work across all major browsers and even IE11.</p>
 <h4>CSS Grid Table</h4>
 <p><img src="../../assets/img/post-images/css-grid-table.png" alt="Grid Table">
@@ -89,94 +89,94 @@
 <pre><code class="language-css">	/* Reset */
 
 	body {
-		padding: 0;
-		margin: 0;
-		border: 0;
-		box-sizing: border-box;
+    	padding: 0;
+    	margin: 0;
+    	border: 0;
+    	box-sizing: border-box;
 	}
 
 	/* Table */
 
 	.table {
-	  margin: 50px 20px 0 20px;
-	  display: grid;
-	  grid-template-columns: repeat(5, 1fr);
-	  background-color: #fff;
-	  color: #444;
-	  max-width: 920px;
-	  border: 1px solid #bfbfbf;
+  	margin: 50px 20px 0 20px;
+  	display: grid;
+  	grid-template-columns: repeat(5, 1fr);
+  	background-color: #fff;
+  	color: #444;
+  	max-width: 920px;
+  	border: 1px solid #bfbfbf;
 	}
 
 	.header {
-		background-color: #bfbfbf;
-		font-size: 14;
-		font-weight: bold;
+    	background-color: #bfbfbf;
+    	font-size: 14;
+    	font-weight: bold;
 	}
 
 	.row {
-	  grid-column: 1 / -1;
-	  display: grid;
-	  grid-template-columns: repeat(5,  1fr);
-	  border-bottom: 1px solid #bfbfbf;
+  	grid-column: 1 / -1;
+  	display: grid;
+  	grid-template-columns: repeat(5,  1fr);
+  	border-bottom: 1px solid #bfbfbf;
 	}
 
 	.row:last-child{
-		border: 0;
+    	border: 0;
 	}
 
 	.cell {
-	  color: #444444;
-	  padding: 10px 0;
-	  font-size: 12;
-	  margin: 0 10px;
+  	color: #444444;
+  	padding: 10px 0;
+  	font-size: 12;
+  	margin: 0 10px;
 	}
 
 	@media screen and (max-width: 430px){
-		.table .row {
-		  display: block;
-		}
+    	.table .row {
+      	display: block;
+    	}
 
-		.header{
-			display: none !important;
-		}
+    	.header{
+        	display: none !important;
+    	}
 	}
 </code></pre>
 <p> </p>
 <h4>HTML</h4>
 <pre><code class="language-html">&lt;body&gt;
 	&lt;div class=&quot;table&quot;&gt;
-	
-		&lt;div class=&quot;row header&quot;&gt;
-			&lt;div class=&quot;cell title&quot;&gt;Client Details&lt;/div&gt;
-			&lt;div class=&quot;cell&quot;&gt;Animals&lt;/div&gt;
-			&lt;div class=&quot;cell&quot;&gt;Date Registered&lt;/div&gt;
-			&lt;div class=&quot;cell&quot;&gt;Account Status&lt;/div&gt;
-			&lt;div class=&quot;cell&quot;&gt;&amp;nbsp;&lt;/div&gt;
-		&lt;/div&gt;
+    
+    	&lt;div class=&quot;row header&quot;&gt;
+        	&lt;div class=&quot;cell title&quot;&gt;Client Details&lt;/div&gt;
+        	&lt;div class=&quot;cell&quot;&gt;Animals&lt;/div&gt;
+        	&lt;div class=&quot;cell&quot;&gt;Date Registered&lt;/div&gt;
+        	&lt;div class=&quot;cell&quot;&gt;Account Status&lt;/div&gt;
+        	&lt;div class=&quot;cell&quot;&gt;&amp;nbsp;&lt;/div&gt;
+    	&lt;/div&gt;
 
-		&lt;div class=&quot;row&quot;&gt;
-			&lt;div class=&quot;cell&quot;&gt;Rick Sanchez&lt;/div&gt;
-			&lt;div class=&quot;cell&quot;&gt;Snuffles (Dog)&lt;/div&gt;
-			&lt;div class=&quot;cell&quot;&gt;12/16/19&lt;/div&gt;
-			&lt;div class=&quot;cell&quot;&gt;Approved&lt;/div&gt;
-			&lt;div class=&quot;cell&quot;&gt;&lt;button&gt;Button&lt;/button&gt;&lt;/div&gt;
-		&lt;/div&gt;
+    	&lt;div class=&quot;row&quot;&gt;
+        	&lt;div class=&quot;cell&quot;&gt;Rick Sanchez&lt;/div&gt;
+        	&lt;div class=&quot;cell&quot;&gt;Snuffles (Dog)&lt;/div&gt;
+        	&lt;div class=&quot;cell&quot;&gt;12/16/19&lt;/div&gt;
+        	&lt;div class=&quot;cell&quot;&gt;Approved&lt;/div&gt;
+        	&lt;div class=&quot;cell&quot;&gt;&lt;button&gt;Button&lt;/button&gt;&lt;/div&gt;
+    	&lt;/div&gt;
 
-		&lt;div class=&quot;row&quot;&gt;
-			&lt;div class=&quot;cell&quot;&gt;Bugs Bunny&lt;/div&gt;
-			&lt;div class=&quot;cell&quot;&gt;Daffy (Duck)&lt;/div&gt;
-			&lt;div class=&quot;cell&quot;&gt;12/17/19&lt;/div&gt;
-			&lt;div class=&quot;cell&quot;&gt;Pending&lt;/div&gt;
-			&lt;div class=&quot;cell&quot;&gt;&lt;button&gt;Button&lt;/button&gt;&lt;/div&gt;
-		&lt;/div&gt;
+    	&lt;div class=&quot;row&quot;&gt;
+        	&lt;div class=&quot;cell&quot;&gt;Bugs Bunny&lt;/div&gt;
+        	&lt;div class=&quot;cell&quot;&gt;Daffy (Duck)&lt;/div&gt;
+        	&lt;div class=&quot;cell&quot;&gt;12/17/19&lt;/div&gt;
+        	&lt;div class=&quot;cell&quot;&gt;Pending&lt;/div&gt;
+        	&lt;div class=&quot;cell&quot;&gt;&lt;button&gt;Button&lt;/button&gt;&lt;/div&gt;
+    	&lt;/div&gt;
 
-		&lt;div class=&quot;row&quot;&gt;
-			&lt;div class=&quot;cell&quot;&gt;James Brown&lt;/div&gt;
-			&lt;div class=&quot;cell&quot;&gt;Shadow (Dog)&lt;/div&gt;
-			&lt;div class=&quot;cell&quot;&gt;12/18/19&lt;/div&gt;
-			&lt;div class=&quot;cell&quot;&gt;Review&lt;/div&gt;
-			&lt;div class=&quot;cell&quot;&gt;&lt;button&gt;Button&lt;/button&gt;&lt;/div&gt;
-		&lt;/div&gt;
+    	&lt;div class=&quot;row&quot;&gt;
+        	&lt;div class=&quot;cell&quot;&gt;James Brown&lt;/div&gt;
+        	&lt;div class=&quot;cell&quot;&gt;Shadow (Dog)&lt;/div&gt;
+        	&lt;div class=&quot;cell&quot;&gt;12/18/19&lt;/div&gt;
+        	&lt;div class=&quot;cell&quot;&gt;Review&lt;/div&gt;
+        	&lt;div class=&quot;cell&quot;&gt;&lt;button&gt;Button&lt;/button&gt;&lt;/div&gt;
+    	&lt;/div&gt;
 
 	&lt;/div&gt;&lt;!-- end table --&gt;
 &lt;/body&gt;

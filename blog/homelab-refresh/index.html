@@ -82,7 +82,7 @@
 <p>At the same time, one of my media server drives was getting full. I had another unused drive sitting in a different tower. I decided it was time to reorganize my files and refresh my servers to better utilize their resources.</p>
 <p>It took a week for me to sort through 8TB of data. I deleted duplicate files and software I no longer needed.</p>
 <h3>Software and Services</h3>
-<p>I took an inventory of the current state of my homelab and noticed some of my systems were still running slightly older versions of Ubuntu Server. I decided I wanted to use Debian 12 without a GUI as a server OS. Ubuntu Server is based on Debian. It is designed to be run in a data center on enterprise hardware. It adds a lot of features I don't use which can slow down a home server.</p>
+<p>I took an inventory of the current state of my homelab and noticed some of my systems were still running slightly older versions of the Ubuntu Server. I decided I wanted to use Debian 12 without a GUI as a server OS. Ubuntu Server is based on Debian. It is designed to be run in a data center on enterprise hardware. It adds a lot of features I don't use which can slow down a home server.</p>
 <p>In my opinion, Debian is easier to install, configure, and maintain. I planned on installing <a href="https://casaos.io/">CasaOS</a>, on top of Debian, to create and manage docker continers. After testing CasaOS with both Ubuntu Server and Debian on my hardware, I found Debian runs faster and uses less power.</p>
 <p>A few years ago I set up a Jellyfin media server using POP!_OS because some configuration and management tasks are easier to do with a GUI. So, I decided not to change it during the refresh. Instead, I updated it to the latest version and cleaned up the files.</p>
 <h3>Website Hosting</h3>
@@ -98,7 +98,7 @@
 <p>Instead, I use the <a href="https://www.11ty.dev/">Eleventy Static Site Generator</a> to create a static version for both of my websites locally. Then I host them on <a href="https://pages.github.com/">GitHub Pages</a> for free. Doing this eliminates all the problems mentioned above.</p>
 <h3>Names and Static IPs</h3>
 <p>Originally, I used the Greek Gods and Goddesses as a naming convention for all my systems. During this refresh, I decided to change the naming convention to the periodic table of elements because I'm a science nerd!</p>
-<p>I reconfigured the storage across my systems and installed Debian as the server OS on most of them. Then I setup static IP addresses outside my router's DHCP range. I did this to ensure the static IP addresses wouldn't interfere with any dynamic addresses it might assign to other devices.</p>
+<p>I reconfigured the storage across my systems and installed Debian as the server OS on most of them. Then I set a static IP address outside my router's DHCP range. I did this to ensure the static IP addresses wouldn't interfere with any dynamic addresses it might assign to other devices.</p>
 <h3>Hardware and network map</h3>
 <p><img src="../../assets/img/post-images/homelab-network.png" alt="img"></p>
 <p>Above is a graphic that shows all my hardware and a map of how they are connected within my network. None of the information in this map will compromise my network security. I'm sharing it to illustrate the amount of work I put into refreshing my homelab.</p>
@@ -116,7 +116,7 @@
 </ul>
 <h3>Results</h3>
 <p>I'm happy now that everything is in its right place. I can easily access my servers to find files or use services.</p>
-<p>Due to the high electricity cost in my area I keep my computers turned off unless I'm using them.</p>
+<p>Due to the high electricity cost in my area, I keep my computers turned off unless I'm using them.</p>
 <p>To make my life easier I wrote out all the steps I took to install, setup, and configure the operating systems, software, and services I use in my homelab: <a href="https://github.com/starcorelabs/homelab">Homelab Repo</a>.</p>
 <p>In a few months if I decide to add or update anything I can reference my documentation.</p>
 <p>Running a homelab is a fun hobby. If you're interested in setting up a homelab, I recommend checking out <a href="https://www.youtube.com/watch?v=WpYLPIMxzaU&amp;list=PLhMI0SExGwfD9I-NEzMz2TzW1bew13u5r">DB Tech's CasaOS Playlist on YouTube</a>.</p>
