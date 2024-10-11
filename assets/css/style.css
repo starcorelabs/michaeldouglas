@@ -716,13 +716,6 @@ pre {
   border: 1px solid #333333;
 }
 
-.michael-headshot{
-  height: 200px;
-  width: 200px;
-  float: none;
-  margin: 20px 10px 10px 0;
-  border-radius: 3px;
-}
 
 
 /* Solitary Page */
@@ -924,4 +917,12 @@ pre {
 
 .clean-top{
   margin-top: 9rem;
+}
+
+.michael-headshot{
+  height: 200px;
+  width: 200px;
+  float: none;
+  margin: 20px 10px 10px 0px;
+  border-radius: 3px;
 }
