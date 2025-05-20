@@ -27,20 +27,14 @@
         rel="stylesheet"> <!-- Plugin CSS -->
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/assets/css/style.css" type="text/css">
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!-- [if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        
-        <![endif] -->
 </head>
 
 <body id="page-top">
     <!-- this nav is always at the top -->
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top affix">
+    <!--
+    <nav id="mainNav" class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
         <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
+
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                     data-target="#bs-example-navbar-collapse-1">
@@ -51,7 +45,7 @@
                 </button>
                 <a class="navbar-brand page-scroll" href="/">Michael Douglas</a>
             </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
+
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
@@ -65,15 +59,36 @@
                     </li>
                 </ul>
             </div>
-            <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container-fluid -->
     </nav>
+    -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark"> 
+        <div class="container"> 
+            <a class="navbar-brand" href="/">Michael Douglas</a> 
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"> 
+                <span class="navbar-toggler-icon"></span> 
+            </button> <div class="collapse navbar-collapse" id="navbarCollapse"> 
+                <ul class="navbar-nav ms-auto"> 
+                    <li class="nav-item"> 
+                        <a class="nav-link" href="/about">About</a> 
+                    </li> 
+                    <li class="nav-item"> 
+                        <a class="nav-link" href="/design-services">Design Services</a> 
+                    </li> 
+                    <li class="nav-item"> 
+                        <a class="nav-link" href="https://www.linkedin.com/in/michaeldouglas30">LinkedIn</a> 
+                    </li> 
+                </ul> 
+            
+            </div> 
+        </div> 
+    </nav>
+
     <!-- block render -->
     
     
 <!-- hero-->
-<div class="bg-primary" id="hero">
+<div class="" id="hero">
   <div class="page-title">
     <h1>FREELANCE DESIGN</h1>
   </div>
@@ -85,62 +100,54 @@
     
 <!-- content -->
 <section class="no-padding" id="portfolio">
-  <div class="container">
-    <div class="row">
+  <div class="page-container">
+    <div class="img-gallery">
       
       
       
-      <div class="col-md-6 col-sm-12 box-top">
-        <a href="/work/aventiv/" class="portfolio-box">
-          <img src="../../assets/img/work/AllPaid.png" class="img-responsive img-border" alt="Aventiv" />
-          <div class="portfolio-box-caption">
-            <div class="portfolio-box-caption-content">
-              <div class="project-name">
-                Aventiv
-              </div>
-            </div>
-          </div>
+      <div class="img-gallery-item">
+      <figure class="hover-img">
+        <a href="/work/allpaid/">
+          <img src="../../assets/img/allpaid/allpaid.png" class="img-responsive project-img" alt="AllPaid" />
+          <figcaption>
+          <h3>AllPaid</h3>
+          </figcaption>
         </a>
-      </div>
+      </figure>
+    </div>
       
-      <div class="col-md-6 col-sm-12 box-top">
-        <a href="/work/bluesky/" class="portfolio-box">
-          <img src="../../assets/img/work/bluesky-office.png" class="img-responsive img-border" alt="BlueSky Commerce" />
-          <div class="portfolio-box-caption">
-            <div class="portfolio-box-caption-content">
-              <div class="project-name">
-                BlueSky Commerce
-              </div>
-            </div>
-          </div>
+      <div class="img-gallery-item">
+      <figure class="hover-img">
+        <a href="/work/bluesky/">
+          <img src="../../assets/img/work/bluesky-office.png" class="img-responsive project-img" alt="BlueSky Commerce" />
+          <figcaption>
+          <h3>BlueSky Commerce</h3>
+          </figcaption>
         </a>
-      </div>
+      </figure>
+    </div>
       
-      <div class="col-md-6 col-sm-12 box-top">
-        <a href="/work/navient/" class="portfolio-box">
-          <img src="../../assets/img/work/navient.png" class="img-responsive img-border" alt="Navient" />
-          <div class="portfolio-box-caption">
-            <div class="portfolio-box-caption-content">
-              <div class="project-name">
-                Navient
-              </div>
-            </div>
-          </div>
+      <div class="img-gallery-item">
+      <figure class="hover-img">
+        <a href="/work/navient/">
+          <img src="../../assets/img/work/navient.png" class="img-responsive project-img" alt="Navient" />
+          <figcaption>
+          <h3>Navient</h3>
+          </figcaption>
         </a>
-      </div>
+      </figure>
+    </div>
       
-      <div class="col-md-6 col-sm-12 box-top">
-        <a href="/work/hccmis/" class="portfolio-box">
-          <img src="../../assets/img/work/hccmis.png" class="img-responsive img-border" alt="Responsive Website Redesign" />
-          <div class="portfolio-box-caption">
-            <div class="portfolio-box-caption-content">
-              <div class="project-name">
-                Responsive Website Redesign
-              </div>
-            </div>
-          </div>
+      <div class="img-gallery-item">
+      <figure class="hover-img">
+        <a href="/work/hccmis/">
+          <img src="../../assets/img/work/hccmis.png" class="img-responsive project-img" alt="Responsive Website Redesign" />
+          <figcaption>
+          <h3>Responsive Website Redesign</h3>
+          </figcaption>
         </a>
-      </div>
+      </figure>
+    </div>
       
       
     </div>
@@ -159,11 +166,10 @@
 
 
     <!-- jQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="/assets/js/jquery-3.7.1.min.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="/assets/js/bootstrap.min.js"></script>
     <!-- Plugin JavaScript-->
-    <script src="/assets/js/jquery.easing.min.js"></script>
     <script src="/assets/js/jquery.fittext.js"></script>
     <!-- Custom Theme JavaScript -->
     <script src="/assets/js/script.js"></script>
