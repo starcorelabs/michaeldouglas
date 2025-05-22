@@ -369,9 +369,8 @@ img {
   border: 1px solid #333333;
 }
 
-
 .page-container {
-  padding: 1em;
+  padding: 1rem;
   max-width: 1260px;
   margin-right: auto;
   margin-left: auto;
@@ -384,9 +383,17 @@ img {
   margin-left: auto;
 }
 
+.gallery-container-jpay{
+  padding: 1rem;
+  max-width: 1320px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 /* Gallery layout */
 :root {
-  --gallery-gap: 1em;
+  --gallery-gap: 1rem;
+  --gallery-gap-jpay: 1rem;
   --gallery-items-per-row: 1;
 }
 
@@ -402,13 +409,26 @@ img {
   gap: var(--gallery-gap);
 }
 
+.img-gallery-jpay {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gallery-gap-jpay);
+}
+
 .img-gallery-item {
   flex: 0 0
     calc(
       (100% - (var(--gallery-gap) * (var(--gallery-items-per-row) - 1))) /
         var(--gallery-items-per-row)
     );
+}
 
+.img-gallery-item-jpay {
+  flex: 0 0
+    calc(
+      (100% - (var(--gallery-gap) * (var(--gallery-items-per-row) - 1))) /
+        var(--gallery-items-per-row)
+    );
 }
 
 @media only screen and (width >= 1024px) {
@@ -419,15 +439,23 @@ img {
   .img-gallery-project {
     --gallery-items-per-row: 3;
   }
+
+    .img-gallery-jpay {
+    --gallery-items-per-row: 6;
+  }
 }
 
 @media only screen and (768px < width < 1024px) {
   .img-gallery {
-    --gallery-items-per-row: 3;
+    --gallery-items-per-row: 2;
   }
 
   .img-gallery-project {
     --gallery-items-per-row: 2;
+  }
+
+  .img-gallery-jpay {
+    --gallery-items-per-row: 4;
   }
 }
 
@@ -440,6 +468,17 @@ img {
     --gallery-items-per-row: 1;
   }
 
+  .img-gallery-jpay {
+    --gallery-items-per-row: 2;
+  }
+
+}
+
+
+@media only screen and (400px < width < 540px) {
+  .img-gallery-jpay {
+    --gallery-items-per-row: 2;
+  }
 }
 
 /* Gallery styles */
@@ -1040,16 +1079,6 @@ pre {
   margin:auto;
 }
 
-/*
-.hero-img{
-  background-image: url("../../assets/img/");
-  background-position: center;
-  background-size: cover;
-  height: 350px;
-  width: 100%;
-}
-*/
-
 .page-title{
   display: flex;
   justify-content: center;
@@ -1168,3 +1197,9 @@ footer p{
   .img-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
+#project div h1 {
+    text-align: center;
+    margin-top: 80px;
+    font-weight: bold;
+    font-size: 80px
+}
