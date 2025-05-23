@@ -1203,3 +1203,10 @@ footer p{
     font-weight: bold;
     font-size: 80px
 }
+
+
+@media (max-width: 1200px) {
+    .img-top{
+    margin-top: 20px;
+  }
+}
