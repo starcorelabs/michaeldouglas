@@ -1097,7 +1097,7 @@ pre {
 
 @media (max-width: 400px){
   .page-title{
-    margin: 45px 0 0 0;
+    margin: 70px 0 0 0;
   }
 }
 
@@ -1205,8 +1205,20 @@ footer p{
 }
 
 
-@media (max-width: 1200px) {
+@media (max-width: 768px) {
     .img-top{
+    margin-top: 20px;
+  }
+
+  #project div h1 {
+    font-size: 60px;
+  }
+
+}
+
+
+@media (max-width: 1200px) {
+    .large-img-top{
     margin-top: 20px;
   }
 }
