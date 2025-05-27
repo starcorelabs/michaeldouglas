@@ -1216,9 +1216,16 @@ footer p{
 
 }
 
-
 @media (max-width: 1200px) {
     .large-img-top{
     margin-top: 20px;
   }
+}
+
+#contact {
+  margin: 50px 20px 0 20px;
+}
+
+.greeting{
+  margin: 0 0 60px 0;
 }
