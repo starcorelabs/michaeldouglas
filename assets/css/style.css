@@ -1163,20 +1163,38 @@ pre {
 footer{
   margin-top: auto;
   display: flex;
-  flex-flow: column;
+  flex-flow: row;
   height: 60px;
   background-color: #333333;
   color: #ffffff;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 footer p{
   margin: 0;
   padding: 10px 0;
   height: 100%;
-  align-self:center;
   color: #ffffff;
   font-size: 15px;
+}
+
+@media (max-width: 630px) {
+    footer{
+    height: auto;
+    margin-top: auto;
+    flex-flow: column;
+    justify-content:space-around;
+  }
+
+  footer p{
+  align-self:center;
+  margin: 0;
+  padding: 10px 0;
+  height: 100%;
+  color: #ffffff;
+  font-size: 15px;
+}
+
 }
 
 .img-grid{
