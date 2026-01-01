@@ -791,7 +791,7 @@ img{
 
 .item{
   color: #333333;
-  padding: 20px 0 0 0;
+  padding: 10px 0 0 0;
   text-align: left;
   width: 100%;
   text-align: left;
@@ -802,7 +802,7 @@ img{
 }
 
 .item p{
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 
@@ -845,9 +845,7 @@ img{
   border-radius: 3px;
   margin-top: 20px;
   height: auto;
-  max-width: 800px;
 }
-
 
 pre {
     display: block;
@@ -1311,7 +1309,7 @@ footer p{
   width: 100%;
   max-width: 68em;
   margin: 100px auto 0 auto;
-  padding: 0 2.5em;
+  padding: 0 0.8em;
 }
 
 /* Global Section Titles */ 
@@ -1335,8 +1333,6 @@ footer p{
 }
 
 
-
-
 /* Pricing Section */
 .pricing .pricing-item {
   background-color: var(--surface-color);
@@ -1348,6 +1344,14 @@ footer p{
   overflow: hidden;
   border: 1px solid #333333;
 }
+
+@media (max-width: 768px) {
+  .pricing .pricing-item {
+    margin-bottom: 30px;
+  }
+}
+
+
 
 .pricing .pricing-item h3 {
   font-weight: 400;
@@ -1586,6 +1590,29 @@ footer p{
 
 .services .services-item p {
   line-height: 24px;
-  font-size: 14px;
+  font-size: 20px;
   margin-bottom: 0;
+}
+
+
+#hero h1{
+  font-size: 80px;
+}
+
+@media (max-width: 768px) {
+  #hero h1{
+    font-size: 55px;
+  }
+}
+
+@media (max-width: 600px) {
+  #hero h1{
+    font-size: 55px;
+  }
+}
+
+@media (max-width: 520px) {
+  #hero h1{
+    font-size: 33px;
+  }
 }
