@@ -15,7 +15,13 @@
   --platinum: #E5E4E2;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
+section {
+  scroll-margin-top: 64px;
+}
 
 html,
 body {
@@ -23,6 +29,7 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 body {
@@ -70,6 +77,26 @@ h6 {
   font-family: 'Roboto', sans-serif;
 }
 
+@media (max-width: 768px) {
+  h2{
+    padding: 0 12px 0 12px;
+  }
+
+}
+
+@media (max-width: 600px) {
+  h2{
+    padding: 0 12px 0 12px;
+  }
+
+}
+
+@media (max-width: 520px) {
+  h2{
+    padding: 0 12px 0 12px;
+  }
+
+}
 
 p {
   margin-bottom: 20px;
@@ -92,10 +119,6 @@ p {
 
 .text-faded-extra p{
   color: #333;
-}
-
-section {
-  padding: 50px 0;
 }
 
 aside {
@@ -204,10 +227,20 @@ aside {
   }
 }
 
+.logo img{
+ display: inline;
+ margin-right: 10px;
+ height: auto;
+ width: 30px;
+ padding: 0;
+ border: none;
+}
 
+/*
 .navbar{
   text-transform: uppercase;
 }
+*/
 
 header {
   position: relative;
@@ -389,11 +422,50 @@ img {
 }
 
 .page-container {
-  padding: 1rem;
+  padding: 0 0 16px 0;
   max-width: 1260px;
   margin-right: auto;
   margin-left: auto;
 }
+
+.page-container h1{
+  margin: 95px 0 0 0;
+}
+
+
+@media (max-width: 768px) {
+  .page-container h1{
+    padding: 0 12px 0 12px;
+  }
+
+  .page-container p{
+    padding: 0 12px 0 12px;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .page-container h1{
+    padding: 0 12px 0 12px;
+  }
+
+  .page-container p{
+    padding: 0 12px 0 12px;
+  }
+
+}
+
+@media (max-width: 520px) {
+  .page-container h1{
+    padding: 0 12px 0 12px;
+  }
+
+  .page-container p{
+    padding: 0 12px 0 12px;
+  }
+
+}
+
 
 .gallery-container{
   padding: 20px;
@@ -493,10 +565,27 @@ img {
 
 }
 
-
 @media only screen and (400px < width < 540px) {
   .img-gallery-jpay {
     --gallery-items-per-row: 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .img-gallery-item{
+    padding: 0 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  .img-gallery-item{
+    padding: 0 12px;
+  }
+}
+
+@media (max-width: 520px) {
+  .img-gallery-item{
+    padding: 0 12px;
   }
 }
 
@@ -586,6 +675,9 @@ figure {
 figcaption h3{
   color: #fff;
 }
+
+
+
 
 /* End Hover Image */
 
@@ -941,11 +1033,25 @@ pre {
   width: 65%;
 }
 
+.blog{
+ margin: 100px 0 0 0;
+ padding: 0;
+}
+
+.blog h2{
+  font-size: 40px;
+}
+
 .blog-title{
   margin-top: 70px;
   margin-left: 15px;
   text-align: center;
 }
+
+.blog-list-page{
+  margin-bottom: 50px;
+}
+
 
 .project-single{
   display: flex;
@@ -1120,8 +1226,7 @@ pre {
 }
 
 .page-title h1{
-  font-size: clamp(2.30rem, 1.092rem + 5.789vw, 5rem);
-  font-weight: bold;
+  font-size: 70px;
 }
 
 .page-title{
@@ -1192,12 +1297,12 @@ pre {
 }
 
 
-
+/* footer */
 footer{
   margin-top: auto;
   display: flex;
   flex-flow: row;
-  height: 60px;
+  height: 80px;
   background-color: #333333;
   color: #ffffff;
   justify-content: space-around;
@@ -1205,14 +1310,14 @@ footer{
 
 footer p{
   margin: 0;
-  padding: 10px 0;
+  padding: 28px 0;
   height: 100%;
   color: #ffffff;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 @media (max-width: 630px) {
-    footer{
+  footer{
     height: auto;
     margin-top: auto;
     flex-flow: column;
@@ -1220,15 +1325,17 @@ footer p{
   }
 
   footer p{
-  align-self:center;
-  margin: 0;
-  padding: 10px 0;
-  height: 100%;
-  color: #ffffff;
-  font-size: 15px;
-}
+    align-self:center;
+    margin: 0;
+    padding: 10px 0;
+    height: 100%;
+    color: #ffffff;
+    font-size: 15px;
+  }
 
 }
+
+/* end footer */
 
 .img-grid{
   width: 100%;
@@ -1313,6 +1420,9 @@ footer p{
 }
 
 /* Global Section Titles */ 
+.section{
+  margin: 40px 0 0 0;
+}
 
 .section-title {
   padding-bottom: 60px;
@@ -1334,6 +1444,7 @@ footer p{
 
 
 /* Pricing Section */
+
 .pricing .pricing-item {
   background-color: var(--surface-color);
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
@@ -1489,6 +1600,10 @@ footer p{
   margin-bottom: 30px;
 }
 
+.faq h2{
+  font-size: 40px;
+}
+
 .faq p {
   line-height: 1.7;
   color: var(--default-color);
@@ -1553,13 +1668,17 @@ footer p{
   color: var(--default-color);
 }
 
+.faq .custom-accordion .accordion-body {
+  overflow: hidden;
+}
 /*--------------------------------------------------------------
 # services Section
 --------------------------------------------------------------*/
+
 .services .services-item {
   background-color: var(--surface-color);
   box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.1);
-  padding: 60px 30px 60px 70px;
+  padding: 30px 30px 30px 60px;
   transition: all ease-in-out 0.3s;
   border-radius: 18px;
   height: 100%;
@@ -1594,9 +1713,22 @@ footer p{
   margin-bottom: 0;
 }
 
+.hero {
+  background-image: url("../../assets/img/section-background.svg");
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 30px;
+  padding: 0 0 20px 0;
+}
+
+.hero div h1,
+.hero div p,
+.hero div p strong{
+  color: #ffffff;
+}
 
 #hero h1{
-  font-size: 80px;
+  font-size: 60px;
 }
 
 @media (max-width: 768px) {
@@ -1616,3 +1748,28 @@ footer p{
     font-size: 33px;
   }
 }
+
+.faq{
+  margin: 100px 0 0 0;
+}
+
+.alternatives{
+  padding: 0;
+  margin: 40px 0 0 0;
+}
+
+#how-it-works{
+  background-image: url("../../assets/img/section-background.svg");
+
+  background-position: center;
+  background-size: cover;
+  padding: 30px 0 20px 0;
+  margin-bottom: 30px; 
+}
+
+#how-it-works div h2,
+#how-it-works div p,
+#how-it-works div p strong{
+  color: #ffffff;
+}
+
