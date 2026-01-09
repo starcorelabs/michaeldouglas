@@ -1416,7 +1416,7 @@ footer p{
   width: 100%;
   max-width: 68em;
   margin: 100px auto 0 auto;
-  padding: 0 0.8em;
+  padding: 0 0.8em 1.5em 0.8em;
 }
 
 /* Global Section Titles */ 
